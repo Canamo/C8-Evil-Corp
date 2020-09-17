@@ -127,13 +127,87 @@
         "name": "NewFile-1-1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "NewFile - kopia.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "NewFile - kopia.wav",
+        "userAdded": false
+      },
+      {
+        "file": "NewFile.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 3\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":5,\\\"sustain\\\":5,\\\"sustainPunch\\\":100,\\\"decay\\\":5,\\\"tremoloDepth\\\":29,\\\"tremoloFrequency\\\":999.999999999997,\\\"frequency\\\":499.681874751736,\\\"frequencySweep\\\":-8600,\\\"frequencyDeltaSweep\\\":0,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":45.09709125152952,\\\"vibratoFrequency\\\":636,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":2800,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":3800,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NewFile\"}}",
+        "name": "NewFile.wav",
+        "userAdded": false
+      },
+      {
+        "file": "NewFile-kopia.wav",
+        "kind": "audio",
+        "metadata": "{\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Random 4\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0.8970878727027929,\\\"sustain\\\":0.4995297837663144,\\\"sustainPunch\\\":0,\\\"decay\\\":0,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":3200,\\\"frequencySweep\\\":100,\\\"frequencyDeltaSweep\\\":2700,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sine\\\",\\\"interpolateNoise\\\":false,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":32,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":5200,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":8300,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"NewFile-kopia\"}}",
+        "name": "NewFile-kopia.wav",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1-1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Desktop/upgradeButton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Desktop\\upgradeButton.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "upgradeButton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "upgradeButton.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "upgradeMenu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "upgradeMenu.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "upgradeDropdownValue",
+      "value": ""
+    },
+    {
+      "name": "bytesSecondGlobal",
+      "value": ""
+    },
+    {
+      "name": "firstSecond",
+      "value": "1"
+    },
+    {
+      "name": "data",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -159,7 +233,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.88
+        "zoomFactor": 1
       },
       "objectsGroups": [],
       "variables": [
@@ -188,30 +262,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 33,
+          "height": 38,
           "layer": "",
           "locked": false,
-          "name": "value",
-          "persistentUuid": "92fbfdf7-5397-41a2-a407-6c6af8bcc112",
-          "width": 144,
-          "x": 194,
-          "y": 53,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 298,
-          "layer": "",
-          "locked": false,
-          "name": "NewObject",
+          "name": "upgradeMenuButton",
           "persistentUuid": "b11096e6-fcd6-4c40-87d1-94f17e5e4dcd",
-          "width": 316,
-          "x": 540,
-          "y": -51,
+          "width": 202,
+          "x": 587,
+          "y": 35,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -220,15 +278,175 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 312,
+          "height": 272,
           "layer": "",
           "locked": false,
           "name": "Dropdown",
           "persistentUuid": "56fa01e5-a759-46a5-85fe-64c7382cc099",
-          "width": 335,
-          "x": 557,
-          "y": 1,
+          "width": 198,
+          "x": 590,
+          "y": 76,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "bytesSecond",
+          "persistentUuid": "ddb19cd9-d2ba-449c-a567-a1fe362f34c8",
+          "width": 0,
+          "x": 371,
+          "y": 97,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "bytesSecondAmount",
+          "persistentUuid": "8fec10fe-b20e-4180-8d40-cb3bde19e62e",
+          "width": 0,
+          "x": 337,
+          "y": 95,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "valueText",
+          "persistentUuid": "5f92c9da-df45-4228-8f29-4a9be059e23a",
+          "width": 0,
+          "x": 408,
+          "y": 32,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "value",
+          "persistentUuid": "8a364a68-4312-45c5-be86-8483b686b87a",
+          "width": 0,
+          "x": 368,
+          "y": 33,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 53,
+          "layer": "",
+          "locked": false,
+          "name": "cpuUpgrade",
+          "persistentUuid": "db31cd04-5988-4e32-a7be-9a0fed2198f7",
+          "width": 186,
+          "x": 595,
+          "y": 86,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 54,
+          "layer": "",
+          "locked": false,
+          "name": "gpuUpgrade",
+          "persistentUuid": "f7f712d6-f08d-4edb-be8d-c2e527f8c007",
+          "width": 185,
+          "x": 597,
+          "y": 140,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "cpuLvl",
+          "persistentUuid": "ca56c2af-a47a-4448-b864-4d2949291259",
+          "width": 0,
+          "x": 753,
+          "y": 85,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "gpuLvl",
+          "persistentUuid": "0784cf32-3d1c-46c8-9aa8-8cb337c4cab3",
+          "width": 0,
+          "x": 754,
+          "y": 139,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "locked": false,
+          "name": "psuUpgrade",
+          "persistentUuid": "597c0f89-f038-44f8-a355-708850a56ef7",
+          "width": 180,
+          "x": 599,
+          "y": 186,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "psuLvl",
+          "persistentUuid": "343506e2-ef2f-4c72-80d0-af1322e2f3d2",
+          "width": 0,
+          "x": 756,
+          "y": 187,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -273,10 +491,10 @@
           "bottomMargin": 0,
           "height": 32,
           "leftMargin": 0,
-          "name": "NewObject",
+          "name": "upgradeMenuButton",
           "rightMargin": 0,
           "tags": "",
-          "texture": "NewFile-1-0.png",
+          "texture": "upgradeButton.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
@@ -291,16 +509,240 @@
           "name": "Dropdown",
           "rightMargin": 0,
           "tags": "",
-          "texture": "NewFile-1-1.png",
+          "texture": "upgradeMenu.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
           "width": 32,
-          "variables": [],
+          "variables": [
+            {
+              "name": "Show upgrades",
+              "value": ""
+            }
+          ],
           "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "bytesSecond",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bytes/Second",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "bytesSecondAmount",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [
+            {
+              "name": "bytesPerSecond",
+              "value": ""
+            }
+          ],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "valueText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bytes",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "cpuUpgrade",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "   CPU Lvl",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "gpuUpgrade",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "   GPU Lvl",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "psuUpgrade",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "   PSU Lvl",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "cpuLvl",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "1",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "gpuLvl",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "1",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "psuLvl",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "1",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"checkSecond\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "value",
+                "=",
+                "\"0\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
         {
           "disabled": false,
           "folded": false,
@@ -335,7 +777,7 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarScene"
+                "value": "ModVarGlobal"
               },
               "parameters": [
                 "data",
@@ -352,7 +794,129 @@
               "parameters": [
                 "value",
                 "=",
-                "VariableString(data)"
+                "GlobalVariableString(data)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"checkSecond\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"checkSecond\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "data",
+                "+",
+                "GlobalVariable(bytesSecondGlobal)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "value",
+                "=",
+                "GlobalVariableString(data)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Dropdown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "upgradeMenuButton",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Dropdown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"upgradeShowTimer\""
               ],
               "subInstructions": []
             }
@@ -370,7 +934,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "NewObject",
+                "upgradeMenuButton",
                 "Left",
                 "",
                 ""
@@ -385,6 +949,28 @@
               "parameters": [
                 "",
                 "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Dropdown"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Timer"
+              },
+              "parameters": [
+                "",
+                "0.1",
+                "\"upgradeShowTimer\""
               ],
               "subInstructions": []
             }
@@ -412,10 +998,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Visible"
+                "value": "SourisSurObjet"
               },
               "parameters": [
-                "Dropdown"
+                "cpuUpgrade",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "data",
+                ">=",
+                "10"
               ],
               "subInstructions": []
             }
@@ -424,14 +1036,60 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Cache"
+                "value": "ModVarGlobal"
               },
               "parameters": [
-                "Dropdown"
+                "bytesSecondGlobal",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "data",
+                "-",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "value",
+                "=",
+                "GlobalVariableString(data)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "bytesSecondAmount",
+                "=",
+                "GlobalVariableString(bytesSecondGlobal)"
               ],
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         }
       ],
