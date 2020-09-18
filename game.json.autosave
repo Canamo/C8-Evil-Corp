@@ -651,7 +651,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "1",
+          "string": "0",
           "font": "",
           "characterSize": 30,
           "color": {
@@ -670,7 +670,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "1",
+          "string": "0",
           "font": "",
           "characterSize": 30,
           "color": {
@@ -689,7 +689,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "1",
+          "string": "0",
           "font": "",
           "characterSize": 30,
           "color": {
@@ -919,6 +919,66 @@
                 "\"upgradeShowTimer\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "cpuUpgrade"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "cpuLvl"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "gpuUpgrade"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "gpuLvl"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "psuUpgrade"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "psuLvl"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -986,6 +1046,72 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "psuUpgrade",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "psuLvl",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "cpuUpgrade",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "gpuUpgrade",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "cpuLvl",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "gpuLvl",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1028,6 +1154,16 @@
                 "data",
                 ">=",
                 "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Visible"
+              },
+              "parameters": [
+                "cpuUpgrade"
               ],
               "subInstructions": []
             }
@@ -1080,6 +1216,30 @@
                 "GlobalVariableString(bytesSecondGlobal)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "cpuLvl",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "cpuLvl",
+                "=",
+                "GlobalVariableString(cpuLvl)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1122,6 +1282,16 @@
                 "data",
                 ">=",
                 "20"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Visible"
+              },
+              "parameters": [
+                "gpuUpgrade"
               ],
               "subInstructions": []
             }
@@ -1174,6 +1344,30 @@
                 "GlobalVariableString(bytesSecondGlobal)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "gpuLvl",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "gpuLvl",
+                "=",
+                "GlobalVariableString(gpuLvl)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1218,9 +1412,31 @@
                 "30"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Visible"
+              },
+              "parameters": [
+                "psuUpgrade"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "bytesSecondGlobal",
+                "+",
+                "3"
+              ],
+              "subInstructions": []
+            },
             {
               "type": {
                 "inverted": false,
@@ -1263,9 +1479,21 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "bytesSecondGlobal",
+                "psuLvl",
                 "+",
-                "3"
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "psuLvl",
+                "=",
+                "GlobalVariableString(psuLvl)"
               ],
               "subInstructions": []
             }
