@@ -184,6 +184,33 @@
         "name": "upgradeMenu.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/upgradeButton.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/upgradeButton.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/upgradeMenu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites/upgradeMenu.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -233,7 +260,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.024
+        "zoomFactor": 1.048
       },
       "objectsGroups": [],
       "variables": [
@@ -556,7 +583,7 @@
           "name": "AI",
           "rightMargin": 0,
           "tags": "",
-          "texture": "NewFile-1.png",
+          "texture": "Sprites/NewFile-1.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
@@ -590,7 +617,7 @@
           "name": "upgradeMenuButton",
           "rightMargin": 0,
           "tags": "",
-          "texture": "upgradeButton.png",
+          "texture": "Sprites/upgradeButton.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
@@ -605,7 +632,7 @@
           "name": "Dropdown",
           "rightMargin": 0,
           "tags": "",
-          "texture": "upgradeMenu.png",
+          "texture": "Sprites/upgradeMenu.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
@@ -1015,7 +1042,7 @@
                   "parameters": [
                     "data",
                     "+",
-                    "100"
+                    "1"
                   ],
                   "subInstructions": []
                 },
