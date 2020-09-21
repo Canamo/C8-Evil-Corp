@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\oskar\\Documents\\GitHub\\C8-Evil-Corp\\game.json",
+    "projectFile": "/home/ludvig/Documents/GitHub/C8-Evil-Corp/game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -271,6 +271,10 @@
     {
       "name": "overPowerLimit",
       "value": "0"
+    },
+    {
+      "name": "hddCost",
+      "value": "150"
     }
   ],
   "layouts": [
@@ -2311,7 +2315,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Dropdown",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2866,18 +2870,6 @@
                     "80"
                   ],
                   "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarGlobal"
-                  },
-                  "parameters": [
-                    "hddPowerUsage",
-                    "=",
-                    "5"
-                  ],
-                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3423,7 +3415,7 @@
                   "parameters": [
                     "data",
                     ">=",
-                    "GlobalVariable(dataCapacity)"
+                    "GlobalVariable(hddCost)"
                   ],
                   "subInstructions": []
                 },
@@ -3471,7 +3463,7 @@
                   "parameters": [
                     "data",
                     "-",
-                    "GlobalVariable(dataCapacity)"
+                    "GlobalVariable(hddCost)"
                   ],
                   "subInstructions": []
                 },
@@ -3518,6 +3510,18 @@
                   },
                   "parameters": [
                     "dataCapacity",
+                    "*",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "hddCost",
                     "+",
                     "50"
                   ],
@@ -3531,7 +3535,7 @@
                   "parameters": [
                     "hddCost",
                     "=",
-                    "\"Cost: \" + GlobalVariableString(dataCapacity) + \" bytes\""
+                    "\"Cost: \" + GlobalVariableString(hddCost) + \" bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -4586,7 +4590,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Power ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
