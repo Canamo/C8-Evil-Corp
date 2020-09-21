@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "C:\\Users\\oskar\\Documents\\GitHub\\C8-Evil-Corp\\game.json",
+    "projectFile": "/home/ludvig/Documents/GitHub/C8-Evil-Corp/game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -254,7 +254,7 @@
     },
     {
       "name": "coolingCost",
-      "value": "100"
+      "value": "256"
     },
     {
       "name": "gpuLvl",
@@ -274,7 +274,11 @@
     },
     {
       "name": "hddCost",
-      "value": "150"
+      "value": "1024"
+    },
+    {
+      "name": "pressValue",
+      "value": "1"
     }
   ],
   "layouts": [
@@ -1539,7 +1543,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": " CPU + 7 Bytes/s",
+          "string": " CPU + 4 Bytes/s",
           "font": "",
           "characterSize": 17,
           "color": {
@@ -1577,7 +1581,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 50 bytes",
+          "string": "Cost: 64 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1596,7 +1600,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": " GPU + 15 bytes/s",
+          "string": " GPU + 8 bytes/s",
           "font": "",
           "characterSize": 16,
           "color": {
@@ -1634,7 +1638,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 100 bytes",
+          "string": "Cost: 128 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1691,7 +1695,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 300 bytes",
+          "string": "Cost: 64 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1710,7 +1714,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": " HDD + 1024 Bytes",
+          "string": " HDD + 2x Storage",
           "font": "",
           "characterSize": 16,
           "color": {
@@ -1748,7 +1752,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 150 bytes",
+          "string": "Cost: 1024 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1805,7 +1809,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 100 bytes",
+          "string": "Cost: 256 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -2184,7 +2188,7 @@
                   "parameters": [
                     "data",
                     "+",
-                    "1000"
+                    "GlobalVariable(pressValue)"
                   ],
                   "subInstructions": []
                 },
@@ -2818,7 +2822,7 @@
                   "parameters": [
                     "cpuCost",
                     "=",
-                    "50"
+                    "64"
                   ],
                   "subInstructions": []
                 },
@@ -2842,7 +2846,7 @@
                   "parameters": [
                     "gpuCost",
                     "=",
-                    "100"
+                    "128"
                   ],
                   "subInstructions": []
                 },
@@ -2866,7 +2870,7 @@
                   "parameters": [
                     "psuCost",
                     "=",
-                    "300"
+                    "64"
                   ],
                   "subInstructions": []
                 },
@@ -2970,7 +2974,7 @@
                   "parameters": [
                     "bytesSecondGlobalBottleneck",
                     "+",
-                    "7"
+                    "4"
                   ],
                   "subInstructions": []
                 },
@@ -2993,8 +2997,8 @@
                   },
                   "parameters": [
                     "cpuCost",
-                    "+",
-                    "10"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3067,6 +3071,18 @@
                     "powerStatus",
                     "=",
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "pressValue",
+                    "+",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -3146,7 +3162,7 @@
                   "parameters": [
                     "bytesSecondGlobal",
                     "+",
-                    "7"
+                    "4"
                   ],
                   "subInstructions": []
                 },
@@ -3169,8 +3185,8 @@
                   },
                   "parameters": [
                     "cpuCost",
-                    "+",
-                    "10"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3267,6 +3283,18 @@
                     "powerStatus",
                     "=",
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "pressValue",
+                    "+",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -3354,7 +3382,7 @@
                   "parameters": [
                     "bytesSecondGlobalBottleneck",
                     "+",
-                    "15"
+                    "8"
                   ],
                   "subInstructions": []
                 },
@@ -3377,8 +3405,8 @@
                   },
                   "parameters": [
                     "gpuCost",
-                    "+",
-                    "100"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3465,6 +3493,18 @@
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "pressValue",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3542,7 +3582,7 @@
                   "parameters": [
                     "bytesSecondGlobal",
                     "+",
-                    "15"
+                    "8"
                   ],
                   "subInstructions": []
                 },
@@ -3565,8 +3605,8 @@
                   },
                   "parameters": [
                     "gpuCost",
-                    "+",
-                    "100"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3663,6 +3703,18 @@
                     "powerStatus",
                     "=",
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "pressValue",
+                    "+",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -3761,8 +3813,8 @@
                   },
                   "parameters": [
                     "psuCost",
-                    "+",
-                    "50"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -3949,8 +4001,8 @@
                   },
                   "parameters": [
                     "hddCost",
-                    "+",
-                    "50"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
@@ -4113,8 +4165,8 @@
                   },
                   "parameters": [
                     "coolingCost",
-                    "+",
-                    "50"
+                    "*",
+                    "2"
                   ],
                   "subInstructions": []
                 },
