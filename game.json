@@ -574,7 +574,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "PSU: All your components needs power and the more upgrades you have one them the more power they need, \n         therefor it is crucial to upgrade your power source or else you might lose all your data.",
+          "string": "PSU: All your components need power and the more upgrades you have, the more power they need.\n         Therefore is it crucial to upgrade your power source or else you might lose all your data.",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -861,22 +861,6 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "valueText",
-          "persistentUuid": "5f92c9da-df45-4228-8f29-4a9be059e23a",
-          "width": 0,
-          "x": 408,
-          "y": 32,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
           "name": "value",
           "persistentUuid": "8a364a68-4312-45c5-be86-8483b686b87a",
           "width": 0,
@@ -1103,7 +1087,7 @@
           "locked": false,
           "name": "coolingLvl",
           "persistentUuid": "574c8141-674f-4203-83ba-55e71fa8139a",
-          "width": 19,
+          "width": 53,
           "x": 744,
           "y": 295,
           "zOrder": 102,
@@ -1136,8 +1120,8 @@
           "name": "dataStorage",
           "persistentUuid": "43db12d0-6423-40e6-91ee-bc5202b477db",
           "width": 0,
-          "x": 336,
-          "y": 2,
+          "x": 6,
+          "y": 368,
           "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
@@ -1296,8 +1280,8 @@
           "name": "infoTitle",
           "persistentUuid": "15249ee0-ea43-4634-ac82-b8b913a8a4d9",
           "width": 343,
-          "x": 250,
-          "y": 176,
+          "x": 245,
+          "y": 471,
           "zOrder": 114,
           "numberProperties": [],
           "stringProperties": [],
@@ -1312,8 +1296,8 @@
           "name": "infoText",
           "persistentUuid": "bbe832f5-efce-4066-83ac-2f0e3b130ade",
           "width": 310,
-          "x": 270,
-          "y": 221,
+          "x": 243,
+          "y": 510,
           "zOrder": 115,
           "numberProperties": [],
           "stringProperties": [],
@@ -1328,8 +1312,8 @@
           "name": "AI",
           "persistentUuid": "e82c3b1f-81f0-446c-a879-a1682956e87b",
           "width": 379,
-          "x": 214,
-          "y": 194,
+          "x": 210,
+          "y": 169,
           "zOrder": 116,
           "numberProperties": [],
           "stringProperties": [],
@@ -1376,8 +1360,8 @@
           "name": "powerStatus",
           "persistentUuid": "951475bf-e685-4c1d-8c00-84d05bbe7557",
           "width": 0,
-          "x": 7,
-          "y": 325,
+          "x": 6,
+          "y": 336,
           "zOrder": 119,
           "numberProperties": [],
           "stringProperties": [],
@@ -1395,6 +1379,38 @@
           "x": 654,
           "y": 529,
           "zOrder": 120,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "overHeating",
+          "persistentUuid": "5e764bce-9a1f-4eb5-86b5-ad783668761b",
+          "width": 0,
+          "x": 6,
+          "y": 398,
+          "zOrder": 121,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "bottleneck",
+          "persistentUuid": "e1cad9c7-62d0-47a6-8cfc-ad76e30d9792",
+          "width": 0,
+          "x": 8,
+          "y": 429,
+          "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1505,25 +1521,6 @@
           ],
           "behaviors": [],
           "string": "",
-          "font": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "valueText",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Bytes",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -1818,7 +1815,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "dataStorage",
           "smoothed": true,
@@ -1829,7 +1826,7 @@
           "behaviors": [],
           "string": "Storage: 1024 bytes",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 18,
           "color": {
             "b": 0,
             "g": 0,
@@ -1964,6 +1961,44 @@
           "width": 32,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "overHeating",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Overheating: No",
+          "font": "",
+          "characterSize": 18,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "bottleneck",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Bottlenecking: No",
+          "font": "",
+          "characterSize": 18,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -2003,7 +2038,7 @@
               "parameters": [
                 "value",
                 "=",
-                "\"0\""
+                "\"0 Bytes\""
               ],
               "subInstructions": []
             },
@@ -2161,7 +2196,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 }
@@ -2194,18 +2229,6 @@
                     "data",
                     ">",
                     "GlobalVariable(dataCapacity)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarGlobal"
-                  },
-                  "parameters": [
-                    "overPowerLimit",
-                    "=",
-                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -2242,7 +2265,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 }
@@ -2288,7 +2311,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 }
@@ -2924,6 +2947,218 @@
                     "cpuUpgrade"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "bottleneckingCheck",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "bytesSecondGlobalBottleneck",
+                    "+",
+                    "7"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "data",
+                    "-",
+                    "GlobalVariable(cpuCost)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "cpuCost",
+                    "+",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "cpuCost",
+                    "=",
+                    "\"Cost: \" + GlobalVariableString(cpuCost) + \" bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "value",
+                    "=",
+                    "GlobalVariableString(data) + \" Bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "bytesSecondAmount",
+                    "=",
+                    "GlobalVariableString(bytesSecondGlobal)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "cpuLvl",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "cpuLvl",
+                    "=",
+                    "GlobalVariableString(cpuLvl)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "differenceCpuGpu",
+                    "=",
+                    "abs(GlobalVariable(gpuLvl) - GlobalVariable(cpuLvl))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "cpuUpgrade",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "data",
+                    ">=",
+                    "GlobalVariable(cpuCost)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "cpuUpgrade"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "bottleneckingCheck",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -2983,7 +3218,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -3112,6 +3347,18 @@
                     "gpuUpgrade"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "bottleneckingCheck",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -3121,7 +3368,7 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "bytesSecondGlobal",
+                    "bytesSecondGlobalBottleneck",
                     "+",
                     "15"
                   ],
@@ -3171,7 +3418,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -3248,6 +3495,214 @@
                   "subInstructions": []
                 }
               ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "gpuUpgrade",
+                    "",
+                    "yes",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "data",
+                    ">=",
+                    "GlobalVariable(gpuCost)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "gpuUpgrade"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "bottleneckingCheck",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "bytesSecondGlobal",
+                    "+",
+                    "15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "data",
+                    "-",
+                    "GlobalVariable(gpuCost)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "gpuCost",
+                    "+",
+                    "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "gpuCost",
+                    "=",
+                    "\"Cost: \" + GlobalVariableString(gpuCost) + \" bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "value",
+                    "=",
+                    "GlobalVariableString(data) + \" Bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "bytesSecondAmount",
+                    "=",
+                    "GlobalVariableString(bytesSecondGlobal)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "gpuLvl",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "gpuLvl",
+                    "=",
+                    "GlobalVariableString(gpuLvl)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "differenceCpuGpu",
+                    "=",
+                    "abs(GlobalVariable(gpuLvl) - GlobalVariable(cpuLvl))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "20"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
               "events": []
             },
             {
@@ -3359,7 +3814,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -3475,7 +3930,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -3651,7 +4106,7 @@
                   "parameters": [
                     "value",
                     "=",
-                    "GlobalVariableString(data)"
+                    "GlobalVariableString(data) + \" Bytes\""
                   ],
                   "subInstructions": []
                 },
@@ -3750,7 +4205,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Overheating",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3866,28 +4321,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoTitle",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoText",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
@@ -3905,6 +4338,18 @@
                       "parameters": [
                         "",
                         "\"overHeating\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "\"Overheating: Yes\""
                       ],
                       "subInstructions": []
                     }
@@ -3951,92 +4396,6 @@
                         "bytesSecondAmount",
                         "=",
                         "GlobalVariableString(bytesSecondGlobal)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Timer"
-                      },
-                      "parameters": [
-                        "",
-                        "5",
-                        "\"overHeating\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "overHeating",
-                        "=",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "infoTitle"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "infoText"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "infoTitle"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "infoText"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "data",
-                        "+",
-                        "1000"
                       ],
                       "subInstructions": []
                     }
@@ -4130,6 +4489,18 @@
                         "0"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "\"Overheating: No\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4202,83 +4573,11 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoTitle",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoText",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ResetTimer"
                       },
                       "parameters": [
                         "",
                         "\"storageInfoTimer\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Timer"
-                      },
-                      "parameters": [
-                        "",
-                        "5",
-                        "\"storageInfoTimer\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "infoTitle"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "infoText"
                       ],
                       "subInstructions": []
                     }
@@ -4294,7 +4593,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Bottleneck",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4335,28 +4634,6 @@
                         "infoTitle",
                         "=",
                         "\"You are bottle necking your AI\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoTitle",
-                        ""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "infoText",
-                        ""
                       ],
                       "subInstructions": []
                     },
@@ -4405,113 +4682,28 @@
                         "\"You need to reduce the difference in CPU and GPU level, or else you will have data loss.\""
                       ],
                       "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "Timer"
+                        "value": "TextObject::String"
                       },
                       "parameters": [
-                        "",
-                        "5",
-                        "\"bottleneckInfoTimer\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "infoTitle"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "bottleneckingCheck",
+                        "bottleneck",
                         "=",
-                        "1"
+                        "\"Bottleneck: Yes\""
                       ],
                       "subInstructions": []
                     },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "data",
-                        ">",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Timer"
-                      },
-                      "parameters": [
-                        "",
-                        "5",
-                        "\"randomDataLoss\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
                     {
                       "type": {
                         "inverted": false,
                         "value": "ModVarGlobal"
                       },
                       "parameters": [
-                        "data",
-                        "-",
-                        "RandomInRange(1, 5)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"randomDataLoss\""
+                        "bytesSecondGlobalBottleneck",
+                        "=",
+                        "GlobalVariable(bytesSecondGlobal)"
                       ],
                       "subInstructions": []
                     }
@@ -4577,6 +4769,42 @@
                         "0"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "=",
+                        "\"Bottleneck: No\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "bytesSecondGlobal",
+                        "=",
+                        "GlobalVariable(bytesSecondGlobalBottleneck)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "bytesSecondAmount",
+                        "=",
+                        "GlobalVariableString(bytesSecondGlobal)"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4590,7 +4818,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": true,
+              "folded": false,
               "name": "Power ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4694,8 +4922,31 @@
                       },
                       "parameters": [
                         "data",
+                        "-",
+                        "ceil((GlobalVariable(data)/8)*(GlobalVariable(bytesSecondGlobal)/8))"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "value",
                         "=",
-                        "0"
+                        "GlobalVariableString(data) + \" Bytes\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"powerLimit\""
                       ],
                       "subInstructions": []
                     }
