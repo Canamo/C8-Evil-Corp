@@ -211,6 +211,24 @@
         "name": "Sprites/upgradeMenu.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/gotIt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\gotIt.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/info.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\info.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -249,9 +267,476 @@
     {
       "name": "differenceCpuGpu",
       "value": "abs(GlobalVariable(gpuLvl) - GlobalVariable(cpuLvl))"
+    },
+    {
+      "name": "overPowerLimit",
+      "value": "0"
     }
   ],
   "layouts": [
+    {
+      "b": 169,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Start_47Info_32Scen",
+      "name": "Start/Info Scen",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 204,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 169,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.76
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 86,
+          "layer": "",
+          "locked": false,
+          "name": "infoMain",
+          "persistentUuid": "13ffbc10-406d-462b-9efd-5d27370c7fd3",
+          "width": 1209,
+          "x": 21,
+          "y": 138,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "title",
+          "persistentUuid": "b203eb82-36b0-4f3d-84f9-53d0f7821faa",
+          "width": 0,
+          "x": 285,
+          "y": 37,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoUpgrade",
+          "persistentUuid": "00a6d010-5b79-437e-b804-7b5239f6c841",
+          "width": 0,
+          "x": 49,
+          "y": 209,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoCpu",
+          "persistentUuid": "9e0f7ed6-c376-461c-9b6c-3cf333f2f262",
+          "width": 0,
+          "x": 23,
+          "y": 301,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoGpu",
+          "persistentUuid": "2a450c42-bc0a-4a4a-9407-126bcb683652",
+          "width": 0,
+          "x": 22,
+          "y": 320,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoPsu",
+          "persistentUuid": "a1c2af2e-723a-4e35-bb5e-0a5b44f14786",
+          "width": 0,
+          "x": 23,
+          "y": 338,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoHdd",
+          "persistentUuid": "1c9b6c13-3b9f-4623-b8a2-b9b153261122",
+          "width": 0,
+          "x": 23,
+          "y": 375,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "infoCooling",
+          "persistentUuid": "09325105-0990-43f2-a534-c794ed5219c6",
+          "width": 0,
+          "x": 15,
+          "y": 412,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "tips",
+          "persistentUuid": "7a8ade08-437f-4601-b6c2-b11ac9b558a0",
+          "width": 0,
+          "x": 136,
+          "y": 469,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "",
+          "locked": false,
+          "name": "button",
+          "persistentUuid": "9ce28a58-24af-42f4-8d2b-c305bc53d9be",
+          "width": 180,
+          "x": 303,
+          "y": 525,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "bold": true,
+          "italic": false,
+          "name": "infoMain",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": " Your AI needs data! To collect data click on your AI and when \nenough data has been gathered you can start to upgrade your AI.",
+          "font": "",
+          "characterSize": 24,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": true,
+          "italic": true,
+          "name": "title",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "C8 Evil Corp",
+          "font": "",
+          "characterSize": 40,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "infoUpgrade",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "There will be different components to upgrade, CPU, GPU, PSU, HDD and Cooling. \nEach doing something different to your AI.",
+          "font": "",
+          "characterSize": 18,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "infoCpu",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "CPU: When upgrading your CPU you will gain an increase in data/sec.",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "infoGpu",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "GPU: When upgrading your GPU you also gain an increase in data/sec, however this one will be bigger.",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "infoPsu",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "PSU: All your components needs power and the more upgrades you have one them the more power they need, \n         therefor it is crucial to upgrade your power source or else you might lose all your data.",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "infoHdd",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "HDD: Your AI will store all your data in it's storage, when upgrading your HDD this storage will increase. \n          If you do not you will soon run out of storage and will be unable to collect more data. ",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "infoCooling",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Cooling: When upgrading your CPU and GPU your AI will become warmer, if you do not upgrade your cooling your \n               AI will run very slow.",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "tips",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Tips: Do not only upgrade your CPU or GPU, upgrade them together and keep their \n         individual level somewhat close to one another.",
+          "font": "",
+          "characterSize": 14,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "button",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "Sprites\\gotIt.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "button",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 7838840,
+          "ambientLightColorG": 7806120,
+          "ambientLightColorR": 7039616,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 128,
+          "ambientLightColorG": 128,
+          "ambientLightColorR": 128,
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "name": "Lighting",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -276,7 +761,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.898
+        "zoomFactor": 0.988
       },
       "objectsGroups": [],
       "variables": [
@@ -439,8 +924,8 @@
           "name": "cpuLvl",
           "persistentUuid": "ca56c2af-a47a-4448-b864-4d2949291259",
           "width": 0,
-          "x": 743,
-          "y": 86,
+          "x": 744,
+          "y": 88,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -599,7 +1084,7 @@
           "name": "coolingUpgrade",
           "persistentUuid": "ba288e15-fcd4-401f-9c7b-3e84fd9d2f4c",
           "width": 185,
-          "x": 597,
+          "x": 591,
           "y": 298,
           "zOrder": 101,
           "numberProperties": [],
@@ -868,12 +1353,44 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "events",
+          "name": "status",
           "persistentUuid": "ddcc5a90-ddfa-487d-aaf9-16566370c721",
           "width": 0,
-          "x": 19,
-          "y": 79,
+          "x": 15,
+          "y": 292,
           "zOrder": 118,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "powerStatus",
+          "persistentUuid": "951475bf-e685-4c1d-8c00-84d05bbe7557",
+          "width": 0,
+          "x": 7,
+          "y": 325,
+          "zOrder": 119,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 61,
+          "layer": "",
+          "locked": false,
+          "name": "infoButton",
+          "persistentUuid": "70be1e99-1189-4fd5-871d-66e59e47ce75",
+          "width": 136,
+          "x": 654,
+          "y": 529,
+          "zOrder": 120,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1012,7 +1529,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "cpuUpgrade",
           "smoothed": true,
@@ -1021,9 +1538,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "   CPU",
+          "string": " CPU + 7 Bytes/s",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 17,
           "color": {
             "b": 0,
             "g": 0,
@@ -1059,7 +1576,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 10 bytes",
+          "string": "Cost: 50 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1069,7 +1586,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "gpuUpgrade",
           "smoothed": true,
@@ -1078,9 +1595,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "   GPU",
+          "string": " GPU + 15 bytes/s",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 16,
           "color": {
             "b": 0,
             "g": 0,
@@ -1116,7 +1633,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 20 bytes",
+          "string": "Cost: 100 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1126,7 +1643,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "psuUpgrade",
           "smoothed": true,
@@ -1135,9 +1652,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "   PSU",
+          "string": " PSU + 10 Watt",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 16,
           "color": {
             "b": 0,
             "g": 0,
@@ -1173,7 +1690,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 30 bytes",
+          "string": "Cost: 300 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1183,7 +1700,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "hddUpgrade",
           "smoothed": true,
@@ -1192,9 +1709,9 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "   HDD",
+          "string": " HDD + 1024 Bytes",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 16,
           "color": {
             "b": 0,
             "g": 0,
@@ -1230,7 +1747,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Cost: 1024 bytes",
+          "string": "Cost: 150 bytes",
           "font": "",
           "characterSize": 15,
           "color": {
@@ -1240,7 +1757,7 @@
           }
         },
         {
-          "bold": false,
+          "bold": true,
           "italic": false,
           "name": "coolingUpgrade",
           "smoothed": true,
@@ -1251,7 +1768,7 @@
           "behaviors": [],
           "string": "   Cooling",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 16,
           "color": {
             "b": 0,
             "g": 0,
@@ -1375,21 +1892,74 @@
         {
           "bold": true,
           "italic": false,
-          "name": "events",
+          "name": "status",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Current Events:",
+          "string": "AI Status",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 25,
           "color": {
             "b": 112,
             "g": 112,
             "r": 112
           }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "powerStatus",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0/80 Watt Used",
+          "font": "",
+          "characterSize": 18,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "infoButton",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "Sprites\\info.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -1469,6 +2039,51 @@
           "events": []
         },
         {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "infoButton",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"Start/Info Scen\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -1530,7 +2145,7 @@
                   "parameters": [
                     "data",
                     "+",
-                    "1004"
+                    "1000"
                   ],
                   "subInstructions": []
                 },
@@ -1575,6 +2190,18 @@
                     "data",
                     ">",
                     "GlobalVariable(dataCapacity)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "overPowerLimit",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -1673,7 +2300,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": true,
+          "folded": false,
           "name": "Upgrades",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2164,7 +2791,7 @@
                   "parameters": [
                     "cpuCost",
                     "=",
-                    "10"
+                    "50"
                   ],
                   "subInstructions": []
                 },
@@ -2188,7 +2815,7 @@
                   "parameters": [
                     "gpuCost",
                     "=",
-                    "20"
+                    "100"
                   ],
                   "subInstructions": []
                 },
@@ -2212,7 +2839,7 @@
                   "parameters": [
                     "psuCost",
                     "=",
-                    "30"
+                    "300"
                   ],
                   "subInstructions": []
                 },
@@ -2225,6 +2852,30 @@
                     "psuCost",
                     "=",
                     "\"Cost: \" + GlobalVariableString(psuCost) + \" bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "totalPower",
+                    "=",
+                    "80"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "hddPowerUsage",
+                    "=",
+                    "5"
                   ],
                   "subInstructions": []
                 }
@@ -2292,7 +2943,7 @@
                   "parameters": [
                     "bytesSecondGlobal",
                     "+",
-                    "1"
+                    "7"
                   ],
                   "subInstructions": []
                 },
@@ -2316,7 +2967,7 @@
                   "parameters": [
                     "cpuCost",
                     "+",
-                    "3"
+                    "10"
                   ],
                   "subInstructions": []
                 },
@@ -2391,6 +3042,30 @@
                     "abs(GlobalVariable(gpuLvl) - GlobalVariable(cpuLvl))"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2456,7 +3131,7 @@
                   "parameters": [
                     "bytesSecondGlobal",
                     "+",
-                    "2"
+                    "15"
                   ],
                   "subInstructions": []
                 },
@@ -2480,7 +3155,7 @@
                   "parameters": [
                     "gpuCost",
                     "+",
-                    "6"
+                    "100"
                   ],
                   "subInstructions": []
                 },
@@ -2555,6 +3230,30 @@
                     "abs(GlobalVariable(gpuLvl) - GlobalVariable(cpuLvl))"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "20"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -2618,9 +3317,9 @@
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
-                    "bytesSecondGlobal",
+                    "totalPower",
                     "+",
-                    "3"
+                    "20"
                   ],
                   "subInstructions": []
                 },
@@ -2644,7 +3343,7 @@
                   "parameters": [
                     "psuCost",
                     "+",
-                    "9"
+                    "50"
                   ],
                   "subInstructions": []
                 },
@@ -2675,18 +3374,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "bytesSecondAmount",
-                    "=",
-                    "GlobalVariableString(bytesSecondGlobal)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -2705,6 +3392,18 @@
                     "psuLvl",
                     "=",
                     "GlobalVariableString(psuLvl)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
                   ],
                   "subInstructions": []
                 }
@@ -2820,7 +3519,7 @@
                   "parameters": [
                     "dataCapacity",
                     "+",
-                    "1024"
+                    "50"
                   ],
                   "subInstructions": []
                 },
@@ -2845,6 +3544,30 @@
                     "dataStorage",
                     "=",
                     "\"Storage: \" + GlobalVariableString(dataCapacity) +  \" bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "5"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
                   ],
                   "subInstructions": []
                 }
@@ -2960,7 +3683,7 @@
                   "parameters": [
                     "coolingCost",
                     "+",
-                    "100"
+                    "50"
                   ],
                   "subInstructions": []
                 },
@@ -2973,6 +3696,30 @@
                     "coolingCost",
                     "=",
                     "\"Cost: \" + GlobalVariableString(coolingCost) + \" bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "powerUsed",
+                    "+",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "powerStatus",
+                    "=",
+                    "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
                   ],
                   "subInstructions": []
                 }
@@ -3843,7 +4590,169 @@
               "name": "Power ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
-              "events": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "powerUsed",
+                        ">",
+                        "GlobalVariable(totalPower)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"powerLimit\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "5",
+                        "\"powerLimit\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "data",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "powerUsed",
+                        "<",
+                        "GlobalVariable(totalPower)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
               "parameters": []
             }
           ],
