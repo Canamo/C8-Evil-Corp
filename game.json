@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "/home/ludvig/Documents/GitHub/C8-Evil-Corp/game.json",
+    "projectFile": "C:\\Users\\oskar\\Documents\\GitHub\\C8-Evil-Corp\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -3013,30 +3013,6 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "value",
-                    "=",
-                    "GlobalVariableString(data) + \" Bytes\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "bytesSecondAmount",
-                    "=",
-                    "GlobalVariableString(bytesSecondGlobal)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
                     "value": "ModVarGlobal"
                   },
                   "parameters": [
@@ -3301,6 +3277,14 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -3419,18 +3403,6 @@
                     "value",
                     "=",
                     "GlobalVariableString(data) + \" Bytes\""
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "bytesSecondAmount",
-                    "=",
-                    "GlobalVariableString(bytesSecondGlobal)"
                   ],
                   "subInstructions": []
                 },
@@ -4333,69 +4305,12 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"overHeating\""
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "TextObject::String"
                       },
                       "parameters": [
                         "overHeating",
                         "=",
                         "\"Overheating: Yes\""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "overHeating",
-                        "=",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "bytesSecondGlobal",
-                        "=",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "bytesSecondAmount",
-                        "=",
-                        "GlobalVariableString(bytesSecondGlobal)"
                       ],
                       "subInstructions": []
                     }
@@ -4618,6 +4533,18 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "BuiltinCommonInstructions::Once"
                       },
                       "parameters": [],
@@ -4652,22 +4579,102 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetTimer"
+                        "value": "TextObject::String"
                       },
                       "parameters": [
-                        "",
-                        "\"randomDataLoss\""
+                        "infoText",
+                        "=",
+                        "\"You need to reduce the difference in CPU and GPU level, or else you will have data loss.\""
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "ResetTimer"
+                        "value": "TextObject::String"
                       },
                       "parameters": [
-                        "",
-                        "\"bottleneckInfoTimer\""
+                        "bottleneck",
+                        "=",
+                        "\"Bottleneck: Yes\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "bytesSecondGlobalBottleneck",
+                        "=",
+                        "GlobalVariable(bytesSecondGlobalBackup)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "differenceCpuGpu",
+                        ">=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "infoTitle",
+                        "=",
+                        "\"You are bottle necking your AI\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "bottleneckingCheck",
+                        "=",
+                        "1"
                       ],
                       "subInstructions": []
                     },
@@ -4714,6 +4721,14 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
@@ -4747,6 +4762,117 @@
                           "subInstructions": []
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "bottleneckingCheck",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "=",
+                        "\"Bottleneck: No\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "bytesSecondGlobalBackup",
+                        "=",
+                        "GlobalVariable(bytesSecondGlobalBottleneck)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "differenceCpuGpu",
+                            "<",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarGlobal"
+                          },
+                          "parameters": [
+                            "bottleneckingCheck",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
                     },
                     {
                       "type": {
@@ -4807,6 +4933,14 @@
                       "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
                   "events": []
                 }
               ],
@@ -4923,7 +5057,7 @@
                       "parameters": [
                         "data",
                         "-",
-                        "ceil((GlobalVariable(data)/8)*(GlobalVariable(bytesSecondGlobal)/8))"
+                        "ceil((GlobalVariable(data)/6))"
                       ],
                       "subInstructions": []
                     },
