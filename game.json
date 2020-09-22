@@ -578,7 +578,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "PSU: All your components need power and the more upgrades you have, the more power they need.\n         Therefore is it crucial to upgrade your power source or else you might lose all your data.",
+          "string": "PSU: All your components need power and the more upgrades you have, the more power they need.\n         Therefore, is it crucial to upgrade your power source or else you might lose your data.",
           "font": "",
           "characterSize": 15,
           "color": {
