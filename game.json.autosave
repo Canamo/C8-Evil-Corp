@@ -15,7 +15,7 @@
     "packageName": "com.example.gamename",
     "projectFile": "C:\\Users\\oskar\\Documents\\GitHub\\C8-Evil-Corp\\game.json",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "winExecutableFilename": "",
@@ -382,7 +382,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.988
+        "zoomFactor": 0.568
       },
       "objectsGroups": [],
       "variables": [
@@ -392,22 +392,6 @@
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 220,
-          "layer": "",
-          "locked": false,
-          "name": "AI",
-          "persistentUuid": "cdcf07a7-e291-4cbb-be2c-dac5ce0433fe",
-          "width": 345,
-          "x": 1044,
-          "y": 645,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -747,143 +731,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "7586b0ea-c4eb-4077-8f3c-2e7385a08dbc",
-          "width": 336,
-          "x": 1100,
-          "y": 614,
-          "zOrder": 105,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoText",
-          "persistentUuid": "e17407ab-1013-42ee-8438-76ca24cb2d6c",
-          "width": 0,
-          "x": 1167,
-          "y": 648,
-          "zOrder": 106,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "2a3cb6b3-6a61-4ef3-aaec-9f511162ba7f",
-          "width": 0,
-          "x": 1076,
-          "y": 596,
-          "zOrder": 107,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "AI",
-          "persistentUuid": "a40140e6-999c-4766-a0c0-3116debde479",
-          "width": 0,
-          "x": 1214,
-          "y": 898,
-          "zOrder": 108,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 218,
           "layer": "",
           "locked": false,
           "name": "AI",
           "persistentUuid": "8ddc364b-6fc2-496f-9c36-c06fb9657a26",
           "width": 363,
-          "x": 1130,
-          "y": 864,
+          "x": 1212,
+          "y": 1046,
           "zOrder": 109,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "cbbe2f66-39ce-4677-9884-5999eccae5e3",
-          "width": 0,
-          "x": 1149,
-          "y": 657,
-          "zOrder": 110,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 29,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "e62da80e-76e2-4f7f-aea8-41726bfa6dcf",
-          "width": 214,
-          "x": 1225,
-          "y": 670,
-          "zOrder": 111,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoText",
-          "persistentUuid": "2f5e7fff-1a55-484e-9d98-eb2e9554c65c",
-          "width": 0,
-          "x": 1204,
-          "y": 709,
-          "zOrder": 112,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 23,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "b660276e-0647-467c-afde-5baf639da00e",
-          "width": 236,
-          "x": 1187,
-          "y": 664,
-          "zOrder": 113,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1812,6 +1668,18 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -1942,7 +1810,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Update data loop",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1998,7 +1866,7 @@
                   "parameters": [
                     "data",
                     "+",
-                    "GlobalVariable(pressValue)+100"
+                    "GlobalVariable(pressValue)"
                   ],
                   "subInstructions": []
                 },
@@ -2155,7 +2023,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Upgrades",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4140,7 +4008,7 @@
           "colorR": 74,
           "creationTime": 0,
           "disabled": false,
-          "folded": false,
+          "folded": true,
           "name": "Components cooperation",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4661,7 +4529,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Bottleneck",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4934,9 +4802,9 @@
                       },
                       "parameters": [
                         "",
-                        "126530__sinkhole7__bottleblowingloop1.wav",
+                        "257796__xtrgamr__flatline.wav",
                         "",
-                        "100",
+                        "50",
                         ""
                       ],
                       "subInstructions": []
@@ -5333,7 +5201,7 @@
               "colorR": 74,
               "creationTime": 0,
               "disabled": false,
-              "folded": false,
+              "folded": true,
               "name": "Power ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
