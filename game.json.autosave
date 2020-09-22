@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "/home/ludvig/Documents/GitHub/C8-Evil-Corp/game.json",
+    "projectFile": "C:\\Users\\oskar\\Documents\\GitHub\\C8-Evil-Corp\\game.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -101,15 +101,6 @@
   },
   "resources": {
     "resources": [
-      {
-        "alwaysLoaded": false,
-        "file": "NewFile-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "NewFile-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
       {
         "alwaysLoaded": false,
         "file": "NewFile-1-0.png",
@@ -229,6 +220,91 @@
         "name": "Sprites\\info.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "infoImg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "infoImg.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "262301__boulderbuff64__tongue-click.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "262301__boulderbuff64__tongue-click.wav",
+        "userAdded": false
+      },
+      {
+        "file": "368651__josepharaoh99__game-powerup.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "368651__josepharaoh99__game-powerup.mp3",
+        "userAdded": true
+      },
+      {
+        "file": "210513__nigelcoop__fire-alarm.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "210513__nigelcoop__fire-alarm.wav",
+        "userAdded": true
+      },
+      {
+        "file": "383654__deleted-user-7146007__electricity.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "383654__deleted-user-7146007__electricity.wav",
+        "userAdded": false
+      },
+      {
+        "file": "126530__sinkhole7__bottleblowingloop1.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "126530__sinkhole7__bottleblowingloop1.wav",
+        "userAdded": false
+      },
+      {
+        "file": "493508__soundflakes__space-emergency.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "493508__soundflakes__space-emergency.mp3",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pexels-manuel-geissinger-325229.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "pexels-manuel-geissinger-325229.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sprites/NewFile-1-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sprites\\NewFile-1-1-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "257796__xtrgamr__flatline.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "257796__xtrgamr__flatline.wav",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -282,469 +358,6 @@
     }
   ],
   "layouts": [
-    {
-      "b": 169,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Start_47Info_32Scen",
-      "name": "Start/Info Scen",
-      "oglFOV": 90,
-      "oglZFar": 500,
-      "oglZNear": 1,
-      "r": 204,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 169,
-      "uiSettings": {
-        "grid": false,
-        "gridB": 255,
-        "gridG": 180,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridR": 158,
-        "gridWidth": 32,
-        "snap": true,
-        "windowMask": false,
-        "zoomFactor": 0.76
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 86,
-          "layer": "",
-          "locked": false,
-          "name": "infoMain",
-          "persistentUuid": "13ffbc10-406d-462b-9efd-5d27370c7fd3",
-          "width": 1209,
-          "x": 21,
-          "y": 138,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "title",
-          "persistentUuid": "b203eb82-36b0-4f3d-84f9-53d0f7821faa",
-          "width": 0,
-          "x": 285,
-          "y": 37,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoUpgrade",
-          "persistentUuid": "00a6d010-5b79-437e-b804-7b5239f6c841",
-          "width": 0,
-          "x": 49,
-          "y": 209,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoCpu",
-          "persistentUuid": "9e0f7ed6-c376-461c-9b6c-3cf333f2f262",
-          "width": 0,
-          "x": 23,
-          "y": 301,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoGpu",
-          "persistentUuid": "2a450c42-bc0a-4a4a-9407-126bcb683652",
-          "width": 0,
-          "x": 22,
-          "y": 320,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoPsu",
-          "persistentUuid": "a1c2af2e-723a-4e35-bb5e-0a5b44f14786",
-          "width": 0,
-          "x": 23,
-          "y": 338,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoHdd",
-          "persistentUuid": "1c9b6c13-3b9f-4623-b8a2-b9b153261122",
-          "width": 0,
-          "x": 23,
-          "y": 375,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "infoCooling",
-          "persistentUuid": "09325105-0990-43f2-a534-c794ed5219c6",
-          "width": 0,
-          "x": 15,
-          "y": 412,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "tips",
-          "persistentUuid": "7a8ade08-437f-4601-b6c2-b11ac9b558a0",
-          "width": 0,
-          "x": 136,
-          "y": 469,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 67,
-          "layer": "",
-          "locked": false,
-          "name": "button",
-          "persistentUuid": "9ce28a58-24af-42f4-8d2b-c305bc53d9be",
-          "width": 180,
-          "x": 303,
-          "y": 525,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "bold": true,
-          "italic": false,
-          "name": "infoMain",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": " Your AI needs data! To collect data click on your AI and when \nenough data has been gathered you can start to upgrade your AI.",
-          "font": "",
-          "characterSize": 24,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": true,
-          "italic": true,
-          "name": "title",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "C8 Evil Corp",
-          "font": "",
-          "characterSize": 40,
-          "color": {
-            "b": 27,
-            "g": 2,
-            "r": 208
-          }
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "infoUpgrade",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "There will be different components to upgrade, CPU, GPU, PSU, HDD and Cooling. \nEach doing something different to your AI.",
-          "font": "",
-          "characterSize": 18,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "infoCpu",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "CPU: When upgrading your CPU you will gain an increase in data/sec.",
-          "font": "",
-          "characterSize": 15,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "infoGpu",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "GPU: When upgrading your GPU you also gain an increase in data/sec, however this one will be bigger.",
-          "font": "",
-          "characterSize": 15,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "infoPsu",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "PSU: All your components need power and the more upgrades you have, the more power they need.\n         Therefore is it crucial to upgrade your power source or else you might lose all your data.",
-          "font": "",
-          "characterSize": 15,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "infoHdd",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "HDD: Your AI will store all your data in it's storage, when upgrading your HDD this storage will increase. \n          If you do not you will soon run out of storage and will be unable to collect more data. ",
-          "font": "",
-          "characterSize": 15,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": false,
-          "italic": false,
-          "name": "infoCooling",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Cooling: When upgrading your CPU and GPU your AI will become warmer, if you do not upgrade your cooling your \n               AI will run very slow.",
-          "font": "",
-          "characterSize": 15,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bold": true,
-          "italic": false,
-          "name": "tips",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "behaviors": [],
-          "string": "Tips: Do not only upgrade your CPU or GPU, upgrade them together and keep their \n         individual level somewhat close to one another.",
-          "font": "",
-          "characterSize": 14,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "name": "button",
-          "rightMargin": 0,
-          "tags": "",
-          "texture": "Sprites\\gotIt.png",
-          "tiled": false,
-          "topMargin": 0,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [],
-          "behaviors": []
-        }
-      ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "button",
-                "",
-                "",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Main\"",
-                ""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 7838840,
-          "ambientLightColorG": 7806120,
-          "ambientLightColorR": 7039616,
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "name": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": []
-        },
-        {
-          "ambientLightColorB": 128,
-          "ambientLightColorG": 128,
-          "ambientLightColorR": 128,
-          "followBaseLayerCamera": true,
-          "isLightingLayer": true,
-          "name": "Lighting",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": []
-    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -836,8 +449,8 @@
           "name": "bytesSecond",
           "persistentUuid": "ddb19cd9-d2ba-449c-a567-a1fe362f34c8",
           "width": 0,
-          "x": 371,
-          "y": 97,
+          "x": 352,
+          "y": 124,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -845,15 +458,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 23,
           "layer": "",
           "locked": false,
           "name": "bytesSecondAmount",
           "persistentUuid": "8fec10fe-b20e-4180-8d40-cb3bde19e62e",
-          "width": 0,
-          "x": 337,
-          "y": 95,
+          "width": 39,
+          "x": 307,
+          "y": 123,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -868,7 +481,7 @@
           "name": "value",
           "persistentUuid": "8a364a68-4312-45c5-be86-8483b686b87a",
           "width": 0,
-          "x": 368,
+          "x": 342,
           "y": 33,
           "zOrder": 10,
           "numberProperties": [],
@@ -1124,8 +737,8 @@
           "name": "dataStorage",
           "persistentUuid": "43db12d0-6423-40e6-91ee-bc5202b477db",
           "width": 0,
-          "x": 6,
-          "y": 368,
+          "x": 19,
+          "y": 366,
           "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
@@ -1278,47 +891,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 23,
-          "layer": "",
-          "locked": false,
-          "name": "infoTitle",
-          "persistentUuid": "15249ee0-ea43-4634-ac82-b8b913a8a4d9",
-          "width": 343,
-          "x": 245,
-          "y": 471,
-          "zOrder": 114,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 66,
-          "layer": "",
-          "locked": false,
-          "name": "infoText",
-          "persistentUuid": "bbe832f5-efce-4066-83ac-2f0e3b130ade",
-          "width": 310,
-          "x": 243,
-          "y": 510,
-          "zOrder": 115,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 279,
+          "height": 213,
           "layer": "",
           "locked": false,
           "name": "AI",
           "persistentUuid": "e82c3b1f-81f0-446c-a879-a1682956e87b",
-          "width": 379,
-          "x": 210,
-          "y": 169,
-          "zOrder": 116,
+          "width": 290,
+          "x": 261,
+          "y": 330,
+          "zOrder": 127,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1348,8 +929,8 @@
           "name": "status",
           "persistentUuid": "ddcc5a90-ddfa-487d-aaf9-16566370c721",
           "width": 0,
-          "x": 15,
-          "y": 292,
+          "x": 42,
+          "y": 300,
           "zOrder": 118,
           "numberProperties": [],
           "stringProperties": [],
@@ -1364,8 +945,8 @@
           "name": "powerStatus",
           "persistentUuid": "951475bf-e685-4c1d-8c00-84d05bbe7557",
           "width": 0,
-          "x": 6,
-          "y": 336,
+          "x": 23,
+          "y": 333,
           "zOrder": 119,
           "numberProperties": [],
           "stringProperties": [],
@@ -1396,7 +977,7 @@
           "name": "overHeating",
           "persistentUuid": "5e764bce-9a1f-4eb5-86b5-ad783668761b",
           "width": 0,
-          "x": 6,
+          "x": 20,
           "y": 398,
           "zOrder": 121,
           "numberProperties": [],
@@ -1412,9 +993,89 @@
           "name": "bottleneck",
           "persistentUuid": "e1cad9c7-62d0-47a6-8cfc-ad76e30d9792",
           "width": 0,
-          "x": 8,
-          "y": 429,
+          "x": 18,
+          "y": 435,
           "zOrder": 122,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 601,
+          "layer": "",
+          "locked": false,
+          "name": "infoPic",
+          "persistentUuid": "735c09ba-ed8f-49a3-a3d5-3a022d033a86",
+          "width": 798,
+          "x": 1,
+          "y": -1,
+          "zOrder": 147,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "",
+          "locked": false,
+          "name": "exitInfoButton",
+          "persistentUuid": "f57837fa-b7b8-45cb-afc3-497fcd8280cd",
+          "width": 180,
+          "x": 302,
+          "y": 525,
+          "zOrder": 124,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 599,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject2",
+          "persistentUuid": "4eabb3c7-2bbe-49a4-b46e-3bcf22ef61e0",
+          "width": 798,
+          "x": 2,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 216,
+          "layer": "",
+          "locked": false,
+          "name": "Dropdown",
+          "persistentUuid": "c6dd84c4-031a-476a-8343-3f8a6c07548f",
+          "width": 253,
+          "x": 9,
+          "y": 287,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 401,
+          "layer": "",
+          "locked": false,
+          "name": "table",
+          "persistentUuid": "7c2839ed-c5e6-4497-8e9c-f4cd53f43715",
+          "width": 458,
+          "x": 183,
+          "y": 280,
+          "zOrder": 126,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1428,7 +1089,7 @@
           "name": "AI",
           "rightMargin": 0,
           "tags": "",
-          "texture": "Sprites/NewFile-1.png",
+          "texture": "Sprites\\NewFile-1-1-0.png",
           "tiled": false,
           "topMargin": 0,
           "type": "PanelSpriteObject::PanelSprite",
@@ -1437,8 +1098,8 @@
           "behaviors": []
         },
         {
-          "bold": false,
-          "italic": false,
+          "bold": true,
+          "italic": true,
           "name": "value",
           "smoothed": true,
           "tags": "",
@@ -1448,11 +1109,11 @@
           "behaviors": [],
           "string": "",
           "font": "",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -1492,7 +1153,7 @@
         },
         {
           "bold": false,
-          "italic": false,
+          "italic": true,
           "name": "bytesSecond",
           "smoothed": true,
           "tags": "",
@@ -1504,14 +1165,14 @@
           "font": "",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
           "bold": false,
-          "italic": false,
+          "italic": true,
           "name": "bytesSecondAmount",
           "smoothed": true,
           "tags": "",
@@ -1528,9 +1189,9 @@
           "font": "",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           }
         },
         {
@@ -2003,6 +1664,66 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "infoPic",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "infoImg.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "exitInfoButton",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "Sprites\\gotIt.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "NewObject2",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "pexels-manuel-geissinger-325229.jpg",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "table",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "NewFile-1.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -2077,6 +1798,20 @@
                 "infoText"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "493508__soundflakes__space-emergency.mp3",
+                "yes",
+                "30",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -2115,11 +1850,86 @@
             {
               "type": {
                 "inverted": false,
-                "value": "PushScene"
+                "value": "Montre"
+              },
+              "parameters": [
+                "infoPic",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "exitInfoButton",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
               },
               "parameters": [
                 "",
-                "\"Start/Info Scen\""
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "exitInfoButton",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Visible"
+              },
+              "parameters": [
+                "infoPic"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "infoPic"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "exitInfoButton"
               ],
               "subInstructions": []
             }
@@ -2188,7 +1998,7 @@
                   "parameters": [
                     "data",
                     "+",
-                    "GlobalVariable(pressValue)"
+                    "GlobalVariable(pressValue)+100"
                   ],
                   "subInstructions": []
                 },
@@ -2201,6 +2011,20 @@
                     "value",
                     "=",
                     "GlobalVariableString(data) + \" Bytes\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "262301__boulderbuff64__tongue-click.wav",
+                    "",
+                    "40",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -3085,6 +2909,20 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3297,6 +3135,20 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3503,6 +3355,20 @@
                     "pressValue",
                     "+",
                     "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -3717,6 +3583,20 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -3875,6 +3755,20 @@
                     "powerStatus",
                     "=",
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4053,6 +3947,20 @@
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -4103,7 +4011,7 @@
                   },
                   "parameters": [
                     "data",
-                    ">",
+                    ">=",
                     "GlobalVariable(coolingCost)"
                   ],
                   "subInstructions": []
@@ -4203,6 +4111,20 @@
                     "powerStatus",
                     "=",
                     "GlobalVariableString(powerUsed) + \"/\" + GlobalVariableString(totalPower) + \" Watt Used\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlayMusic"
+                  },
+                  "parameters": [
+                    "",
+                    "368651__josepharaoh99__game-powerup.mp3",
+                    "",
+                    "40",
+                    ""
                   ],
                   "subInstructions": []
                 }
@@ -4365,6 +4287,173 @@
                         "\"Overheating: Yes\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"overheatingBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "210513__nigelcoop__fire-alarm.wav",
+                        "",
+                        "30",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"overheatingBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "\"0;0;0\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"overheatingBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "\"overheatingBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"overheatingBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4466,6 +4555,18 @@
                         "overHeating",
                         "=",
                         "\"Overheating: No\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "overHeating",
+                        "\"0;0;0\"",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -4663,6 +4764,43 @@
                         "GlobalVariable(bytesSecondGlobalBackup)"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"bottleneckBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "257796__xtrgamr__flatline.wav",
+                        "",
+                        "50",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -4763,6 +4901,173 @@
                         "bytesSecondGlobalBottleneck",
                         "=",
                         "GlobalVariable(bytesSecondGlobal)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"bottleneckBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "126530__sinkhole7__bottleblowingloop1.wav",
+                        "",
+                        "100",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"bottleneckBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "bottleneckingCheck",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"0;0;0\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"bottleneckBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "\"bottleneckBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "bottleneckingCheck",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"bottleneckBlinkTimerFirst\""
                       ],
                       "subInstructions": []
                     }
@@ -4870,6 +5175,18 @@
                         "bytesSecondGlobalBackup",
                         "=",
                         "GlobalVariable(bytesSecondGlobalBottleneck)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"0;0;0\"",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -4983,6 +5300,18 @@
                         "GlobalVariableString(bytesSecondGlobal)"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "bottleneck",
+                        "\"0;0;0\"",
+                        "0"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -5058,8 +5387,183 @@
                         "\"powerLimit\""
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "powerStatus",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"powerkBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "383654__deleted-user-7146007__electricity.wav",
+                        "",
+                        "30",
+                        ""
+                      ],
+                      "subInstructions": []
                     }
                   ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"powerkBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "powerStatus",
+                        "\"0;0;0\"",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"powerkBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "Timer"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "\"powerkBlinkTimerSecond\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "overPowerLimit",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "powerStatus",
+                        "\"255;0;0\"",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"powerkBlinkTimerFirst\""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
                   "events": []
                 },
                 {
@@ -5186,6 +5690,18 @@
                       "parameters": [
                         "overPowerLimit",
                         "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::SetOutline"
+                      },
+                      "parameters": [
+                        "powerStatus",
+                        "\"0;0;0\"",
                         "0"
                       ],
                       "subInstructions": []
